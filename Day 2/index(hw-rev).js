@@ -84,16 +84,20 @@
 
 //5) Viewing 14y/o kids to adult contents
 
-/*
+// /*
 {
 let age = Number(prompt('Enter your age'));
+if (age<0){
+    alert('Invalid age!');
+    age = Number(prompt('Enter your age'));
+}
 if (age>14){
     alert(`You're old enough to view this content!`);
 }else{
     alert(`You're not old enough for this!`);
 }
 }
-*/
+// */
 
 
 //6)
