@@ -18,4 +18,6 @@ to accidentally change it, we use const to set the value to read-only type.
  2)
  - The boolean datatype helps us to manipulate the condition
  - It represent two types of values: True/False
+ - Convert to Boolean: 
+ result = Boolean (<value>);
 */
