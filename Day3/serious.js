@@ -9,10 +9,9 @@
 let arr = prompt ('Please enter your numbers:').split(',').map(Number);
 // This is how to turn a string array into a number array
 // We just combine the (1) & (2) to shorten the code
-let sum = 0;
-for (let i = 0 ; i < arr.length ; i++){
-    sum += arr[i];
-}
+const sum = arr.reduce((acc,cur)=>{
+    return acc+cur;
+},0);
 console.log(sum);
 */
 
