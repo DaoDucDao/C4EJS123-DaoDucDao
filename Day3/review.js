@@ -37,12 +37,10 @@ if (command == 'D'){
 }
 
 if(command == 'R'){
-    // for (let i=0; i<items.length ; i++){
-    //   alert(`The items list are: \n ${items[i]}`);
+    
     console.log('The items list are:');
-    // console.log(items.join());
     for (let i=0; i< items.length ; i++){
-        console.log(items[i]);
+        console.log(`${i+1}. ${items[i]}`);
     }
 }
 */

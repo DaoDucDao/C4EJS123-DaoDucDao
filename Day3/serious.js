@@ -28,6 +28,7 @@ alert('The smallest number is ' + Math.min(...arr));
 
 //7) Create an array, elements are input, check whether another input number is in the array
 
+/*
 let arr = prompt('Please enter your array:').split(',').map(Number);
 while (arr.length<5){
     alert('The array must contains at least 5 elements!');
@@ -48,3 +49,7 @@ if (!arr.includes(check)){
 // indexOf() allows us to find the position of an element in the array
 // if we enter a number that is not in the array inside bracket, we will get -1 as a result
 // There are fromIndex() & lastIndexOf() that are similiar usage to indexOf()
+*/
+
+
+
