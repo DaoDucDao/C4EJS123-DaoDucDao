@@ -1,7 +1,11 @@
-// /*
+/*
 //8) The sheeps thingy
 //1) Enter the sheep size
 let sheeps = prompt('Enter the sheep size').split(',').map(Number);
+while(sheeps.includes(NaN)){
+    alert('Invalid input!');
+    sheeps = prompt('PLease re-enter your numbers:').split(',').map(Number);
+}
 console.log('Hello, my name is Dragneil Daedalus and this is my sheep sizes:');
 console.log(...sheeps);
 console.log('\n');
@@ -45,4 +49,4 @@ const sum = sheeps.reduce((acc, cur) =>{
 },0);
 console.log(`My flock has a total size of: ${sum}`);
 console.log(`I would get ${sum}*2$ = ${sum*2}`);
-// */
+*/

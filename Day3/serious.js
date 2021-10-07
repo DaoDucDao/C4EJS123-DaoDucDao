@@ -7,6 +7,10 @@
 // let input = prompt ('Pls enter your numbers'); (1)
 // let arr = input.split(',').map(Number); (2)
 let arr = prompt ('Please enter your numbers:').split(',').map(Number);
+while(arr.includes(NaN)){
+    alert('Invalid input!');
+    arr = prompt('PLease re-enter your numbers:').split(',').map(Number);
+}
 // This is how to turn a string array into a number array
 // We just combine the (1) & (2) to shorten the code
 const sum = arr.reduce((acc,cur)=>{
@@ -19,6 +23,10 @@ console.log(sum);
 
 /*
 let arr = prompt('Please enter your number').split(',').map(Number);
+while(arr.includes(NaN)){
+    alert('Invalid input!');
+    arr = prompt('PLease re-enter your numbers:').split(',').map(Number);
+}
 // As performed above 
 alert('The smallest number is ' + Math.min(...arr));
 // This '...' is called destructuring an assignment, which helps us extract data from arrays or objects into distinct variables
@@ -31,6 +39,10 @@ let arr = prompt('Please enter your array:').split(',').map(Number);
 while (arr.length<5){
     alert('The array must contains at least 5 elements!');
     arr = prompt('Please enter at least 5 elements:').split(',').map(Number);
+    while(arr.includes(NaN)){
+        alert('Invalid input!');
+        arr = prompt('PLease re-enter your numbers:').split(',').map(Number);
+    }
 }
 console.log(arr);
 

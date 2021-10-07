@@ -14,22 +14,18 @@ while (!options.includes(command)){
         command = prompt('Hi there, welcome to shop admin panel, what do you want? (R, C, U, D)');
     } 
 
-while(command == 'C'){
+if (command == 'C'){
     let newitem = prompt('Enter the new item:');
     items.push(newitem);
     alert('Done!');
     command = prompt('Please re-enter your command:');
-}
-
-if (command == 'U'){
+}else if (command == 'U'){
     let newitem = prompt('Enter the update item:');
     let order = prompt('Enter the position you want to update:')
     items[order]= newitem;
     alert('Done!')
     command = prompt('Please re-enter your command');
-}
-
-if (command == 'D'){
+} else if (command == 'D'){
     let order = prompt('Please enter the position you want to remove:');
     items.splice(order,1);
     alert('Done!');
