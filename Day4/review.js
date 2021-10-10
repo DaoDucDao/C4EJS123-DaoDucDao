@@ -1,6 +1,6 @@
 //4)Write a dictionary
 
-{
+
 const dict ={
     debug: 'The process of figuring out why your program  has a cer tain error and how to fix it',
     done : 'When your task is complete, the only thing you have do do is to wait for users to use it (no additional codes or actions needed',
@@ -8,7 +8,6 @@ const dict ={
     pm : 'The short version of Project Manager, the person in charge of the final result of a project',
     'ui/ux' : 'UI means User Interface, UX mea User Experience, are the process to difine how your products looks and feels',
 };
-}
 
 //4.1) Write a script to stimulate the lookup of the dictionary
 
