@@ -1,11 +1,6 @@
 // 5) Sum an array which the elements are input
 
 /*
-// let arr = prompt('Please enter your number:').split(','); 
-// We put a comma here so the the array wont take COMMA as an element
-// But this only return us a string array, we need an array of numbers
-// let input = prompt ('Pls enter your numbers'); (1)
-// let arr = input.split(',').map(Number); (2)
 let arr = prompt ('Please enter your numbers:').split(',').map(Number);
 while(arr.includes(NaN)){
     alert('Invalid input!');

@@ -17,7 +17,7 @@ while(true){
         command = prompt('Please re-enter your command:');
     }else if(command == 'U'){
         let newitem = prompt('Enter the update item:');
-        let order = prompt('Enter the position you want to update:')
+        let order = prompt('Enter the position you want to update:');
         items[order]= newitem;
         alert('Done!')
         command = prompt('Please re-enter your command');
