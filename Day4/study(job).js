@@ -929,14 +929,48 @@ hits: [
         }
     ]
 }
-// console.log(jobSearch);
 
 //3.1) The outermost layer data type is Array
 //3.2) The hits property is Array
-//3.3) Find the the job's tiltle, locations, salary, etc.
+//3.3) Find the the job's tiltle, locations, salary, benefits, skills & requirements
 
-// for (let index = 0 , index < Object.keys(jobSearch).length, index++){
-    // console.log(jobSearch.hits[index]);
-// }
-console.log(Object.keys(jobSearch).length);
+// Method 1: Using for loop
+{
+    for(let i =0; i <jobSearch.hits.length ; i++){
+        console.log(jobSearch.hits[i].benefits);
+    } // Benefits
+}
+
+
+{
+    for( let i = 0 ; i <jobSearch.hits.length ; i++){
+        console.log(jobSearch.hits[i].jobTitle);
+    } //Title
+}
+
+
+{
+    for (let i = 0 ; i <jobSearch.hits.length ; i++){
+        console.log(jobSearch.hits[i].locations);
+    } //locations
+}
+
+{
+    for (let i=0; i < jobSearch.hits.length; i++){
+        console.log(jobSearch.hits[i].skills);
+    }   //Skills
+}
+
+
+{
+for (let i =0 ; i<jobSearch.hits.length ; i++){
+    console.log(jobSearch.hits[i].jobRequirement);
+}   //Requirements
+}
+
+{}
+for(let i=0; i<jobSearch.hits.length; i++){
+    console.log(jobSearch.hits[i].jobSalary);
+}   //Salary
+}
 
