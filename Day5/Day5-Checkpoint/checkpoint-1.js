@@ -15,33 +15,36 @@
         {
             question : "Who is Daedalus?",
             answer:[ 'A architect' , 'A soldier', 'A farmer' , 'A king' ],
-            'right answer' : 0,
+            'right answer' : 1,
         },
         {
             question : 'Who is Quentin Taratino',
             answer : [ 'A actor', 'A director', 'A businessman', 'A stunman'],
-            'right answer' : 1,
+            'right answer' : 2,
         },
         {
             question : 'Who is Freddrick Zoller',
             answer : ['A soldier', 'A movie star', 'A farmer', 'A bartender'],
-            'right answer' : 0,
+            'right answer' : 1,
         },
         {
             question : 'Who is Diep Tri Thu',
             answer : [ 'A thug', 'A bussinessman', 'A martial art fighter', 'A fisherman'],
-            'right answer' : 0,
+            'right answer' : 1,
         },
-    ];
-//4-5-6-7-8-9) 
+    ];    
+//4-5-6-7) 
+/*
 {
     let random = Math.floor(Math.random()*quiz.length);
     let altstr = '';
     let useranswer;
-    const availans = [ 1 , 2 , 3 , 4 ];
-    for( let i =quiz.length; i >= 0 ; i--){
-            altstr += quiz[random].question +'\n';
-            for( let j = 0 ; j < quiz[random].answer.length ; j++){
+    let point = 0;
+    let originallength = quiz.length;
+    const availans = [  1 , 2 , 3 , 4 ];
+    for( let i =quiz.length ; i > 0 ; i--){
+            altstr += quiz[random].question + '\n';
+            for( let j = 0 ; j < quiz[random].answer.length ; j++){  //we would have a uncaught type error here if we use <=, so best is <
                 altstr += j+1 + '. ' + quiz[random].answer[j] + '\n';
             }
             if(quiz.length == 0){
@@ -53,9 +56,16 @@
                 alert('Invalid answer');
                 useranswer = Number(prompt(altstr));
             }
-            
+            if( useranswer === quiz[random]['right answer']){
+                alert ('The answer is correct!');
+                point ++;
+            } else {
+                alert('The answer is not correct!')
+            }
             quiz.splice(random , 1);
             random = Math.floor(Math.random()*quiz.length);
             altstr = '';
         }
+        alert(`You answered ${point} out of ${originallength} questions!`)
 }
+*/
