@@ -1,5 +1,5 @@
 //1)
-/*
+
 const arr = ['to' , 'be', 'that', 'of' , 'elon' , 'to', 'this' ,  'now', 'back' , 'cool' , 'hey' , 'love' , 'of' , 'life' , 'that' , 'rain' , 'summer', 'colour' , 'now' , 'that', 'of', 'hat','late', 'sorry','my','team'];
 let count = {};
 for (let word of arr){
@@ -13,7 +13,7 @@ for (let word of arr){
 for (let i = 0 ; i < Object.keys(count).length ; i++){
     console.log (`${Object.keys(count)[i]} : ${count[Object.keys(count)[i]]}`)
 }
-*/
+
 //2)
 const inventory = [
     {

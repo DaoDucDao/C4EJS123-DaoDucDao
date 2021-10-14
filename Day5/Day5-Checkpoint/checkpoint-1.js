@@ -34,7 +34,7 @@
         },
     ];    
 //4-5-6-7) 
-/*
+
 {
     let random = Math.floor(Math.random()*quiz.length);
     let altstr = '';
@@ -68,4 +68,3 @@
         }
         alert(`You answered ${point} out of ${originallength} questions!`)
 }
-*/
