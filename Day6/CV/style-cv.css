@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: 'Monsterrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 body{
     background: #585c68;
@@ -19,7 +19,7 @@ body{
 }
 
 .semi_bold{
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 16px;
 }
 
@@ -27,23 +27,23 @@ body{
     width: 800px;
     height: auto;
     display: flex;
-    margin: 40px auto;
+    margin: 50px auto;
 }
 
 .resume .resume_left{
-width: 300px;
+width: 280px;
 background:#0bb5f4;
 }
 .resume .resume_left .resume_profile{
     width: 100%;
-    height: 300px;
+    height: 280px;
 }
 .resume .resume_left .resume_profile img{
     width: 100%;
     height: 100%;
 }
 .resume .resume_left .resume_content{
-    padding: 0 40px
+    padding: 0 25px
 }
 .resume .title {
     margin-bottom: 20px;
@@ -53,6 +53,11 @@ background:#0bb5f4;
 }
 .resume .resume_left .regular{
     color:  #b1eaff;
+}
+
+.resume .resume_item{
+    padding: 25px 0;
+    border-bottom: 2px solid #b1eaff;
 }
 
 .resume .resume_left .resume_item:last-child{
@@ -69,11 +74,11 @@ background:#0bb5f4;
 }
 
 .resume_left .resume_left ul li.icon{
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    background: #fff;
     color: #0bb5f4;
-    border-radius: 40%;
+    border-radius: 50%;
     margin-right: 15px;
     font-size: 16px;
     position: relative;
@@ -157,12 +162,12 @@ background:#0bb5f4;
 .resume .resume_right .resume_education ul li:before{
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 5px;
+    left: -25px;
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    border: 2px solod #0bb5f4;
+    border: 2px solid #0bb5f4;
 }
 
 .resume .resume_right .resume_work ul li:after,
