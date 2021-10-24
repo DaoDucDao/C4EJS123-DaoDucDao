@@ -36,3 +36,4 @@ function add (){
 
 console.log(arr)
 addbutton.addEventListener('click',add);
+//12.14 12.15 12.16 undone
