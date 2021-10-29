@@ -1,0 +1,15 @@
+.HP_header{
+    color: white;
+    text-align: center;
+}
+body{
+    background-color: rgb(10, 75, 75);
+}
+#HP_search{
+    display: block;
+    height: 50x;
+    width: 80%;
+    font-size: 14pt;
+    margin: auto;
+    text-align: center;
+}
