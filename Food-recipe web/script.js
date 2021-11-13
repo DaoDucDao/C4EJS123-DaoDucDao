@@ -5,6 +5,7 @@ const recipeCloseBtn = document.getElementById('recipe-close-btn');
 
 // event listeners
 searchBtn.addEventListener('click', getMealList);
+searchBtn.addEventListener('click', getLoginForm);
 mealList.addEventListener('click', getMealRecipe);
 recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
@@ -15,7 +16,7 @@ recipeCloseBtn.addEventListener('click', () => {
 function getMealList(){
     let searchInputTxt = document.getElementById('search-input').value.trim();
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
-    .then(response => response.json())
+    .then(response => response.json())   
     .then(data => {
         let html = "";
         if(data.meals){

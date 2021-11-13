@@ -8,10 +8,43 @@
   <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-  
+  <!-- log in -->
+  <div id="login_modal" class="modal">
+    <div class="modal_content">
+        <span class="close">&times;</span>
+        <div class="input_field">
+            <input type="text" placeholder="Username" id="user" autocomplete="off">
+            <input type="text" placeholder="Password" id="user_pass" autocomplete="off">
+            <button id="modal_login_btn">Login</button>
+        </div>
+    </div>
+</div>
+<div id="signup_modal" class="modal">
+    <div class="modal_content">
+        <span class="close">&times;</span>
+        <div class="input_field">
+            <input type="text" placeholder="Email" id="new_email" autocomplete="off">
+            <input type="text" placeholder="Username" id="new_user" autocomplete="off">
+            <input type="text" placeholder="Password" id="new_password" autocomplete="off">
+            <button id="modal_signup_btn">Sign up</button>
+        </div>
+    </div>
+</div>
+<div id="favourite_add_modal" class="modal">
+    <div class="modal_content">
+        <span class="close">&times;</span>
+        <div id="favourite_add_boxes"></div>
+    </div>
+</div>
+
+
+
+
+<!-- container -->
   <div class = "container">
     <div class = "meal-wrapper">
       <div class = "meal-search">
+        <button style="position: relative; margin: right;" id="action_login">login</button>
         <h2 class = "title">Find Meals For Your Ingredients</h2>
         <blockquote>Real food doesn't have ingredients, real food is ingredients.<br>
           <cite>- Jamie Oliver</cite>
@@ -69,6 +102,9 @@
     </div>
   </div>
 
+
+
+  
 
 
   <script src = "script.js"></script>
