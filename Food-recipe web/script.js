@@ -2,10 +2,10 @@ const searchBtn = document.getElementById('search-btn');
 const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
+let favourite_add_modal = document.getElementById('playlist_add_modal');
 
 // event listeners
 searchBtn.addEventListener('click', getMealList);
-searchBtn.addEventListener('click', getLoginForm);
 mealList.addEventListener('click', getMealRecipe);
 recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
@@ -29,6 +29,7 @@ function getMealList(){
                         <div class = "meal-name">
                             <h3>${meal.strMeal}</h3>
                             <a href = "#" class = "recipe-btn">Get Recipe</a>
+                            <button type="button" class ="add-fav-btn" id = "add-to-Fav">Add to favourite</button>
                         </div>
                     </div>
                 `;
@@ -40,6 +41,9 @@ function getMealList(){
         }
 
         mealList.innerHTML = html;
+        if (data.meals) {
+            addEventForAddToFavBtn();
+        }
     });
 }
 
@@ -76,3 +80,4 @@ function mealRecipeModal(meal){
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
 }
+ 
