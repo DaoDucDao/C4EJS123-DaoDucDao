@@ -4,10 +4,7 @@ const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
 let favourite_add_modal = document.getElementById('playlist_add_modal');
 
-const favRecipe = [];
 
-localStorage.setItem("favRecipe", JSON.stringify(favRecipe));  //set array vao trong local storage de dung cho html tiep
-localStorage.setItem("pushIntoArray", pushIntoArray + "");  
 
 // event listeners
 searchBtn.addEventListener('click', getMealList);
