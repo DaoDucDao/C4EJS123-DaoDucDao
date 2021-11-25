@@ -140,6 +140,9 @@ body{
 .recipe-btn:hover{
     background: var(--tenne-tawny-dark);
 }
+.add-fav-btn:hover{
+    background: var(--tenne-tawny-dark);
+}
 .add-fav-btn{
     text-decoration: none;
     color: #fff;
@@ -440,6 +443,6 @@ body{
     }
 }
 
-/* sign up thinggy */
+
 
  
